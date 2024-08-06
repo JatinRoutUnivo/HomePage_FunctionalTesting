@@ -1,0 +1,476 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="33" passed="32" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-08-07T00:57:07 IST" name="Default suite" finished-at="2024-08-07T01:03:45 IST" duration-ms="397291">
+    <groups>
+    </groups>
+    <test started-at="2024-08-07T00:57:07 IST" name="Default test" finished-at="2024-08-07T01:03:45 IST" duration-ms="397291">
+      <class name="HomePage.HomePage_FunctionalTest">
+        <test-method is-config="true" signature="LaunchBrowser()[pri:0, instance:HomePage.HomePage_FunctionalTest@6cb107fd]" started-at="2024-08-07T00:57:07 IST" name="LaunchBrowser" finished-at="2024-08-07T00:57:12 IST" duration-ms="4604" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchBrowser -->
+        <test-method signature="AmityLogo()[pri:1, instance:HomePage.HomePage_FunctionalTest@6cb107fd]" started-at="2024-08-07T00:57:12 IST" name="AmityLogo" finished-at="2024-08-07T00:57:12 IST" duration-ms="445" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AmityLogo -->
+        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:HomePage.HomePage_FunctionalTest@6cb107fd]" started-at="2024-08-07T00:57:13 IST" name="CloseBrowser" finished-at="2024-08-07T00:57:13 IST" duration-ms="765" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseBrowser -->
+        <test-method is-config="true" signature="LaunchBrowser()[pri:0, instance:HomePage.HomePage_FunctionalTest@6cb107fd]" started-at="2024-08-07T00:57:13 IST" name="LaunchBrowser" finished-at="2024-08-07T00:57:15 IST" duration-ms="2119" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchBrowser -->
+        <test-method signature="ProgramButton()[pri:2, instance:HomePage.HomePage_FunctionalTest@6cb107fd]" started-at="2024-08-07T00:57:15 IST" name="ProgramButton" finished-at="2024-08-07T00:57:16 IST" duration-ms="804" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ProgramButton -->
+        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:HomePage.HomePage_FunctionalTest@6cb107fd]" started-at="2024-08-07T00:57:16 IST" name="CloseBrowser" finished-at="2024-08-07T00:57:17 IST" duration-ms="334" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseBrowser -->
+        <test-method is-config="true" signature="LaunchBrowser()[pri:0, instance:HomePage.HomePage_FunctionalTest@6cb107fd]" started-at="2024-08-07T00:57:17 IST" name="LaunchBrowser" finished-at="2024-08-07T00:57:19 IST" duration-ms="2316" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchBrowser -->
+        <test-method signature="CareerServices()[pri:3, instance:HomePage.HomePage_FunctionalTest@6cb107fd]" started-at="2024-08-07T00:57:19 IST" name="CareerServices" finished-at="2024-08-07T00:57:20 IST" duration-ms="720" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CareerServices -->
+        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:HomePage.HomePage_FunctionalTest@6cb107fd]" started-at="2024-08-07T00:57:20 IST" name="CloseBrowser" finished-at="2024-08-07T00:57:20 IST" duration-ms="375" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseBrowser -->
+        <test-method is-config="true" signature="LaunchBrowser()[pri:0, instance:HomePage.HomePage_FunctionalTest@6cb107fd]" started-at="2024-08-07T00:57:20 IST" name="LaunchBrowser" finished-at="2024-08-07T00:57:22 IST" duration-ms="2297" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchBrowser -->
+        <test-method signature="AdvantagesButton()[pri:4, instance:HomePage.HomePage_FunctionalTest@6cb107fd]" started-at="2024-08-07T00:57:22 IST" name="AdvantagesButton" finished-at="2024-08-07T00:57:24 IST" duration-ms="1308" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AdvantagesButton -->
+        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:HomePage.HomePage_FunctionalTest@6cb107fd]" started-at="2024-08-07T00:57:24 IST" name="CloseBrowser" finished-at="2024-08-07T00:57:24 IST" duration-ms="361" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseBrowser -->
+        <test-method is-config="true" signature="LaunchBrowser()[pri:0, instance:HomePage.HomePage_FunctionalTest@6cb107fd]" started-at="2024-08-07T00:57:24 IST" name="LaunchBrowser" finished-at="2024-08-07T00:57:26 IST" duration-ms="2258" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchBrowser -->
+        <test-method signature="SearchButton()[pri:5, instance:HomePage.HomePage_FunctionalTest@6cb107fd]" started-at="2024-08-07T00:57:26 IST" name="SearchButton" finished-at="2024-08-07T00:57:27 IST" duration-ms="1205" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SearchButton -->
+        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:HomePage.HomePage_FunctionalTest@6cb107fd]" started-at="2024-08-07T00:57:27 IST" name="CloseBrowser" finished-at="2024-08-07T00:57:28 IST" duration-ms="337" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseBrowser -->
+        <test-method is-config="true" signature="LaunchBrowser()[pri:0, instance:HomePage.HomePage_FunctionalTest@6cb107fd]" started-at="2024-08-07T00:57:28 IST" name="LaunchBrowser" finished-at="2024-08-07T00:57:30 IST" duration-ms="2381" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchBrowser -->
+        <test-method signature="CallusButton()[pri:6, instance:HomePage.HomePage_FunctionalTest@6cb107fd]" started-at="2024-08-07T00:57:30 IST" name="CallusButton" finished-at="2024-08-07T00:57:33 IST" duration-ms="2751" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CallusButton -->
+        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:HomePage.HomePage_FunctionalTest@6cb107fd]" started-at="2024-08-07T00:57:33 IST" name="CloseBrowser" finished-at="2024-08-07T00:57:33 IST" duration-ms="337" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseBrowser -->
+        <test-method is-config="true" signature="LaunchBrowser()[pri:0, instance:HomePage.HomePage_FunctionalTest@6cb107fd]" started-at="2024-08-07T00:57:33 IST" name="LaunchBrowser" finished-at="2024-08-07T00:57:35 IST" duration-ms="1995" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchBrowser -->
+        <test-method signature="StudentLoginButoon()[pri:7, instance:HomePage.HomePage_FunctionalTest@6cb107fd]" started-at="2024-08-07T00:57:35 IST" name="StudentLoginButoon" finished-at="2024-08-07T00:57:38 IST" duration-ms="2667" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- StudentLoginButoon -->
+        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:HomePage.HomePage_FunctionalTest@6cb107fd]" started-at="2024-08-07T00:57:38 IST" name="CloseBrowser" finished-at="2024-08-07T00:57:38 IST" duration-ms="315" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseBrowser -->
+        <test-method is-config="true" signature="LaunchBrowser()[pri:0, instance:HomePage.HomePage_FunctionalTest@6cb107fd]" started-at="2024-08-07T00:57:38 IST" name="LaunchBrowser" finished-at="2024-08-07T00:57:41 IST" duration-ms="2675" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchBrowser -->
+        <test-method signature="EnrollNowButton()[pri:8, instance:HomePage.HomePage_FunctionalTest@6cb107fd]" started-at="2024-08-07T00:57:41 IST" name="EnrollNowButton" finished-at="2024-08-07T00:57:46 IST" duration-ms="4773" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EnrollNowButton -->
+        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:HomePage.HomePage_FunctionalTest@6cb107fd]" started-at="2024-08-07T00:57:46 IST" name="CloseBrowser" finished-at="2024-08-07T00:57:46 IST" duration-ms="332" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseBrowser -->
+        <test-method is-config="true" signature="LaunchBrowser()[pri:0, instance:HomePage.HomePage_FunctionalTest@6cb107fd]" started-at="2024-08-07T00:57:46 IST" name="LaunchBrowser" finished-at="2024-08-07T00:57:48 IST" duration-ms="1824" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchBrowser -->
+        <test-method signature="ApplyNowbutton()[pri:9, instance:HomePage.HomePage_FunctionalTest@6cb107fd]" started-at="2024-08-07T00:57:48 IST" name="ApplyNowbutton" finished-at="2024-08-07T00:57:52 IST" duration-ms="4280" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ApplyNowbutton -->
+        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:HomePage.HomePage_FunctionalTest@6cb107fd]" started-at="2024-08-07T00:57:52 IST" name="CloseBrowser" finished-at="2024-08-07T00:57:52 IST" duration-ms="363" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseBrowser -->
+        <test-method is-config="true" signature="LaunchBrowser()[pri:0, instance:HomePage.HomePage_FunctionalTest@6cb107fd]" started-at="2024-08-07T00:57:52 IST" name="LaunchBrowser" finished-at="2024-08-07T00:57:54 IST" duration-ms="1923" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchBrowser -->
+        <test-method signature="Callicon()[pri:10, instance:HomePage.HomePage_FunctionalTest@6cb107fd]" started-at="2024-08-07T00:57:54 IST" name="Callicon" finished-at="2024-08-07T00:57:58 IST" duration-ms="3354" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Callicon -->
+        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:HomePage.HomePage_FunctionalTest@6cb107fd]" started-at="2024-08-07T00:57:58 IST" name="CloseBrowser" finished-at="2024-08-07T00:57:58 IST" duration-ms="347" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseBrowser -->
+        <test-method is-config="true" signature="LaunchBrowser()[pri:0, instance:HomePage.HomePage_FunctionalTest@6cb107fd]" started-at="2024-08-07T00:57:58 IST" name="LaunchBrowser" finished-at="2024-08-07T00:58:00 IST" duration-ms="1857" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchBrowser -->
+        <test-method signature="WhatsappIcon()[pri:11, instance:HomePage.HomePage_FunctionalTest@6cb107fd]" started-at="2024-08-07T00:58:00 IST" name="WhatsappIcon" finished-at="2024-08-07T00:58:04 IST" duration-ms="3722" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- WhatsappIcon -->
+        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:HomePage.HomePage_FunctionalTest@6cb107fd]" started-at="2024-08-07T00:58:04 IST" name="CloseBrowser" finished-at="2024-08-07T00:58:04 IST" duration-ms="314" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseBrowser -->
+        <test-method is-config="true" signature="LaunchBrowser()[pri:0, instance:HomePage.HomePage_FunctionalTest@6cb107fd]" started-at="2024-08-07T00:58:04 IST" name="LaunchBrowser" finished-at="2024-08-07T00:58:06 IST" duration-ms="2020" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchBrowser -->
+        <test-method signature="ViewAll()[pri:12, instance:HomePage.HomePage_FunctionalTest@6cb107fd]" started-at="2024-08-07T00:58:06 IST" name="ViewAll" finished-at="2024-08-07T00:58:08 IST" duration-ms="2420" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ViewAll -->
+        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:HomePage.HomePage_FunctionalTest@6cb107fd]" started-at="2024-08-07T00:58:08 IST" name="CloseBrowser" finished-at="2024-08-07T00:58:09 IST" duration-ms="360" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseBrowser -->
+        <test-method is-config="true" signature="LaunchBrowser()[pri:0, instance:HomePage.HomePage_FunctionalTest@6cb107fd]" started-at="2024-08-07T00:58:09 IST" name="LaunchBrowser" finished-at="2024-08-07T00:58:11 IST" duration-ms="1944" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchBrowser -->
+        <test-method signature="RequestAcall()[pri:13, instance:HomePage.HomePage_FunctionalTest@6cb107fd]" started-at="2024-08-07T00:58:11 IST" name="RequestAcall" finished-at="2024-08-07T00:58:13 IST" duration-ms="2694" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RequestAcall -->
+        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:HomePage.HomePage_FunctionalTest@6cb107fd]" started-at="2024-08-07T00:58:13 IST" name="CloseBrowser" finished-at="2024-08-07T00:58:14 IST" duration-ms="361" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseBrowser -->
+        <test-method is-config="true" signature="LaunchBrowser()[pri:0, instance:HomePage.HomePage_FunctionalTest@6cb107fd]" started-at="2024-08-07T00:58:14 IST" name="LaunchBrowser" finished-at="2024-08-07T00:58:17 IST" duration-ms="3033" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchBrowser -->
+        <test-method signature="ViewAllS()[pri:14, instance:HomePage.HomePage_FunctionalTest@6cb107fd]" started-at="2024-08-07T00:58:17 IST" name="ViewAllS" finished-at="2024-08-07T00:58:18 IST" duration-ms="1342" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ViewAllS -->
+        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:HomePage.HomePage_FunctionalTest@6cb107fd]" started-at="2024-08-07T00:58:18 IST" name="CloseBrowser" finished-at="2024-08-07T00:58:19 IST" duration-ms="372" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseBrowser -->
+        <test-method is-config="true" signature="LaunchBrowser()[pri:0, instance:HomePage.HomePage_FunctionalTest@6cb107fd]" started-at="2024-08-07T00:58:19 IST" name="LaunchBrowser" finished-at="2024-08-07T00:58:21 IST" duration-ms="2349" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchBrowser -->
+        <test-method signature="ViewAllBlog()[pri:15, instance:HomePage.HomePage_FunctionalTest@6cb107fd]" started-at="2024-08-07T00:58:21 IST" name="ViewAllBlog" finished-at="2024-08-07T00:58:23 IST" duration-ms="2246" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ViewAllBlog -->
+        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:HomePage.HomePage_FunctionalTest@6cb107fd]" started-at="2024-08-07T00:58:23 IST" name="CloseBrowser" finished-at="2024-08-07T00:58:23 IST" duration-ms="352" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseBrowser -->
+        <test-method is-config="true" signature="LaunchBrowser()[pri:0, instance:HomePage.HomePage_FunctionalTest@6cb107fd]" started-at="2024-08-07T00:58:23 IST" name="LaunchBrowser" finished-at="2024-08-07T00:58:26 IST" duration-ms="2258" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchBrowser -->
+        <test-method signature="KnowMore()[pri:16, instance:HomePage.HomePage_FunctionalTest@6cb107fd]" started-at="2024-08-07T00:58:26 IST" name="KnowMore" finished-at="2024-08-07T00:58:29 IST" duration-ms="3718" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- KnowMore -->
+        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:HomePage.HomePage_FunctionalTest@6cb107fd]" started-at="2024-08-07T00:58:29 IST" name="CloseBrowser" finished-at="2024-08-07T00:58:30 IST" duration-ms="355" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseBrowser -->
+        <test-method is-config="true" signature="LaunchBrowser()[pri:0, instance:HomePage.HomePage_FunctionalTest@6cb107fd]" started-at="2024-08-07T00:58:30 IST" name="LaunchBrowser" finished-at="2024-08-07T00:58:32 IST" duration-ms="1979" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchBrowser -->
+        <test-method signature="ApplyNowBottonCTA()[pri:17, instance:HomePage.HomePage_FunctionalTest@6cb107fd]" started-at="2024-08-07T00:58:32 IST" name="ApplyNowBottonCTA" finished-at="2024-08-07T00:58:35 IST" duration-ms="3616" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ApplyNowBottonCTA -->
+        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:HomePage.HomePage_FunctionalTest@6cb107fd]" started-at="2024-08-07T00:58:35 IST" name="CloseBrowser" finished-at="2024-08-07T00:58:36 IST" duration-ms="585" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseBrowser -->
+        <test-method is-config="true" signature="LaunchBrowser()[pri:0, instance:HomePage.HomePage_FunctionalTest@6cb107fd]" started-at="2024-08-07T00:58:36 IST" name="LaunchBrowser" finished-at="2024-08-07T00:58:39 IST" duration-ms="2778" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchBrowser -->
+        <test-method signature="ClickonShowMoreAboutus()[pri:18, instance:HomePage.HomePage_FunctionalTest@6cb107fd]" started-at="2024-08-07T00:58:39 IST" name="ClickonShowMoreAboutus" finished-at="2024-08-07T00:58:47 IST" duration-ms="7814" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ClickonShowMoreAboutus -->
+        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:HomePage.HomePage_FunctionalTest@6cb107fd]" started-at="2024-08-07T00:58:47 IST" name="CloseBrowser" finished-at="2024-08-07T00:58:47 IST" duration-ms="383" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseBrowser -->
+        <test-method is-config="true" signature="LaunchBrowser()[pri:0, instance:HomePage.HomePage_FunctionalTest@6cb107fd]" started-at="2024-08-07T00:58:47 IST" name="LaunchBrowser" finished-at="2024-08-07T00:58:49 IST" duration-ms="2205" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchBrowser -->
+        <test-method signature="CareerServices1()[pri:19, instance:HomePage.HomePage_FunctionalTest@6cb107fd]" started-at="2024-08-07T00:58:49 IST" name="CareerServices1" finished-at="2024-08-07T00:58:54 IST" duration-ms="5220" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CareerServices1 -->
+        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:HomePage.HomePage_FunctionalTest@6cb107fd]" started-at="2024-08-07T00:58:54 IST" name="CloseBrowser" finished-at="2024-08-07T00:58:55 IST" duration-ms="369" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseBrowser -->
+        <test-method is-config="true" signature="LaunchBrowser()[pri:0, instance:HomePage.HomePage_FunctionalTest@6cb107fd]" started-at="2024-08-07T00:58:55 IST" name="LaunchBrowser" finished-at="2024-08-07T00:58:57 IST" duration-ms="2256" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchBrowser -->
+        <test-method signature="StudentStory()[pri:20, instance:HomePage.HomePage_FunctionalTest@6cb107fd]" started-at="2024-08-07T00:58:57 IST" name="StudentStory" finished-at="2024-08-07T00:59:03 IST" duration-ms="6151" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- StudentStory -->
+        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:HomePage.HomePage_FunctionalTest@6cb107fd]" started-at="2024-08-07T00:59:03 IST" name="CloseBrowser" finished-at="2024-08-07T00:59:04 IST" duration-ms="407" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseBrowser -->
+        <test-method is-config="true" signature="LaunchBrowser()[pri:0, instance:HomePage.HomePage_FunctionalTest@6cb107fd]" started-at="2024-08-07T00:59:04 IST" name="LaunchBrowser" finished-at="2024-08-07T00:59:06 IST" duration-ms="2111" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchBrowser -->
+        <test-method signature="LeaderShip()[pri:21, instance:HomePage.HomePage_FunctionalTest@6cb107fd]" started-at="2024-08-07T00:59:06 IST" name="LeaderShip" finished-at="2024-08-07T00:59:11 IST" duration-ms="5718" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LeaderShip -->
+        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:HomePage.HomePage_FunctionalTest@6cb107fd]" started-at="2024-08-07T00:59:11 IST" name="CloseBrowser" finished-at="2024-08-07T00:59:12 IST" duration-ms="340" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseBrowser -->
+        <test-method is-config="true" signature="LaunchBrowser()[pri:0, instance:HomePage.HomePage_FunctionalTest@6cb107fd]" started-at="2024-08-07T00:59:12 IST" name="LaunchBrowser" finished-at="2024-08-07T00:59:14 IST" duration-ms="1822" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchBrowser -->
+        <test-method signature="Corporate()[pri:22, instance:HomePage.HomePage_FunctionalTest@6cb107fd]" started-at="2024-08-07T00:59:14 IST" name="Corporate" finished-at="2024-08-07T00:59:20 IST" duration-ms="6139" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Corporate -->
+        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:HomePage.HomePage_FunctionalTest@6cb107fd]" started-at="2024-08-07T00:59:20 IST" name="CloseBrowser" finished-at="2024-08-07T00:59:20 IST" duration-ms="357" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseBrowser -->
+        <test-method is-config="true" signature="LaunchBrowser()[pri:0, instance:HomePage.HomePage_FunctionalTest@6cb107fd]" started-at="2024-08-07T00:59:20 IST" name="LaunchBrowser" finished-at="2024-08-07T00:59:22 IST" duration-ms="2353" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchBrowser -->
+        <test-method signature="ContactUs()[pri:23, instance:HomePage.HomePage_FunctionalTest@6cb107fd]" started-at="2024-08-07T00:59:22 IST" name="ContactUs" finished-at="2024-08-07T00:59:29 IST" duration-ms="7070" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ContactUs -->
+        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:HomePage.HomePage_FunctionalTest@6cb107fd]" started-at="2024-08-07T00:59:29 IST" name="CloseBrowser" finished-at="2024-08-07T00:59:30 IST" duration-ms="655" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseBrowser -->
+        <test-method is-config="true" signature="LaunchBrowser()[pri:0, instance:HomePage.HomePage_FunctionalTest@6cb107fd]" started-at="2024-08-07T00:59:30 IST" name="LaunchBrowser" finished-at="2024-08-07T00:59:32 IST" duration-ms="1985" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchBrowser -->
+        <test-method signature="Terms()[pri:24, instance:HomePage.HomePage_FunctionalTest@6cb107fd]" started-at="2024-08-07T00:59:32 IST" name="Terms" finished-at="2024-08-07T00:59:39 IST" duration-ms="6599" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Terms -->
+        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:HomePage.HomePage_FunctionalTest@6cb107fd]" started-at="2024-08-07T00:59:39 IST" name="CloseBrowser" finished-at="2024-08-07T00:59:39 IST" duration-ms="398" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseBrowser -->
+        <test-method is-config="true" signature="LaunchBrowser()[pri:0, instance:HomePage.HomePage_FunctionalTest@6cb107fd]" started-at="2024-08-07T00:59:39 IST" name="LaunchBrowser" finished-at="2024-08-07T00:59:42 IST" duration-ms="3265" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchBrowser -->
+        <test-method signature="StudentSupport()[pri:25, instance:HomePage.HomePage_FunctionalTest@6cb107fd]" started-at="2024-08-07T00:59:42 IST" name="StudentSupport" finished-at="2024-08-07T00:59:52 IST" duration-ms="9829" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- StudentSupport -->
+        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:HomePage.HomePage_FunctionalTest@6cb107fd]" started-at="2024-08-07T00:59:52 IST" name="CloseBrowser" finished-at="2024-08-07T00:59:54 IST" duration-ms="1290" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseBrowser -->
+        <test-method is-config="true" signature="LaunchBrowser()[pri:0, instance:HomePage.HomePage_FunctionalTest@6cb107fd]" started-at="2024-08-07T00:59:54 IST" name="LaunchBrowser" finished-at="2024-08-07T00:59:57 IST" duration-ms="3127" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchBrowser -->
+        <test-method signature="Intellectualproperty()[pri:26, instance:HomePage.HomePage_FunctionalTest@6cb107fd]" started-at="2024-08-07T00:59:57 IST" name="Intellectualproperty" finished-at="2024-08-07T01:00:05 IST" duration-ms="8773" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Intellectualproperty -->
+        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:HomePage.HomePage_FunctionalTest@6cb107fd]" started-at="2024-08-07T01:00:05 IST" name="CloseBrowser" finished-at="2024-08-07T01:00:06 IST" duration-ms="633" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseBrowser -->
+        <test-method is-config="true" signature="LaunchBrowser()[pri:0, instance:HomePage.HomePage_FunctionalTest@6cb107fd]" started-at="2024-08-07T01:00:06 IST" name="LaunchBrowser" finished-at="2024-08-07T01:00:08 IST" duration-ms="1838" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchBrowser -->
+        <test-method signature="UGC()[pri:27, instance:HomePage.HomePage_FunctionalTest@6cb107fd]" started-at="2024-08-07T01:00:08 IST" name="UGC" finished-at="2024-08-07T01:00:14 IST" duration-ms="6061" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UGC -->
+        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:HomePage.HomePage_FunctionalTest@6cb107fd]" started-at="2024-08-07T01:00:14 IST" name="CloseBrowser" finished-at="2024-08-07T01:00:14 IST" duration-ms="333" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseBrowser -->
+        <test-method is-config="true" signature="LaunchBrowser()[pri:0, instance:HomePage.HomePage_FunctionalTest@6cb107fd]" started-at="2024-08-07T01:00:14 IST" name="LaunchBrowser" finished-at="2024-08-07T01:00:16 IST" duration-ms="1658" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchBrowser -->
+        <test-method signature="Resource()[pri:28, instance:HomePage.HomePage_FunctionalTest@6cb107fd]" started-at="2024-08-07T01:00:16 IST" name="Resource" finished-at="2024-08-07T01:00:22 IST" duration-ms="6162" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Resource -->
+        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:HomePage.HomePage_FunctionalTest@6cb107fd]" started-at="2024-08-07T01:00:22 IST" name="CloseBrowser" finished-at="2024-08-07T01:00:22 IST" duration-ms="360" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseBrowser -->
+        <test-method is-config="true" signature="LaunchBrowser()[pri:0, instance:HomePage.HomePage_FunctionalTest@6cb107fd]" started-at="2024-08-07T01:00:22 IST" name="LaunchBrowser" finished-at="2024-08-07T01:00:28 IST" duration-ms="5107" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchBrowser -->
+        <test-method signature="Blog()[pri:29, instance:HomePage.HomePage_FunctionalTest@6cb107fd]" started-at="2024-08-07T01:00:28 IST" name="Blog" finished-at="2024-08-07T01:00:34 IST" duration-ms="6102" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Blog -->
+        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:HomePage.HomePage_FunctionalTest@6cb107fd]" started-at="2024-08-07T01:00:34 IST" name="CloseBrowser" finished-at="2024-08-07T01:00:34 IST" duration-ms="395" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseBrowser -->
+        <test-method is-config="true" signature="LaunchBrowser()[pri:0, instance:HomePage.HomePage_FunctionalTest@6cb107fd]" started-at="2024-08-07T01:00:34 IST" name="LaunchBrowser" finished-at="2024-08-07T01:00:36 IST" duration-ms="1712" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchBrowser -->
+        <test-method signature="Media()[pri:30, instance:HomePage.HomePage_FunctionalTest@6cb107fd]" started-at="2024-08-07T01:00:36 IST" name="Media" finished-at="2024-08-07T01:00:43 IST" duration-ms="7070" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Media -->
+        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:HomePage.HomePage_FunctionalTest@6cb107fd]" started-at="2024-08-07T01:00:43 IST" name="CloseBrowser" finished-at="2024-08-07T01:00:43 IST" duration-ms="370" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseBrowser -->
+        <test-method is-config="true" signature="LaunchBrowser()[pri:0, instance:HomePage.HomePage_FunctionalTest@6cb107fd]" started-at="2024-08-07T01:00:43 IST" name="LaunchBrowser" finished-at="2024-08-07T01:00:45 IST" duration-ms="1774" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchBrowser -->
+        <test-method signature="UGProgram()[pri:31, instance:HomePage.HomePage_FunctionalTest@6cb107fd]" started-at="2024-08-07T01:00:45 IST" name="UGProgram" finished-at="2024-08-07T01:01:21 IST" duration-ms="35831" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[name()='path' and contains(@d,'M18.2648 2')]"}
+  (Session info: chrome=127.0.6533.89)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [16e612b0cf2d43b0d28a9d6535d283d3, findElement {using=xpath, value=//*[name()='path' and contains(@d,'M18.2648 2')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.89, chrome: {chromedriverVersion: 126.0.6478.63 (df799988fdc9..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64162}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64162/devtoo..., se:cdpVersion: 127.0.6533.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 16e612b0cf2d43b0d28a9d6535d283d3]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[name()='path' and contains(@d,'M18.2648 2')]"}
+  (Session info: chrome=127.0.6533.89)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [16e612b0cf2d43b0d28a9d6535d283d3, findElement {using=xpath, value=//*[name()='path' and contains(@d,'M18.2648 2')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.89, chrome: {chromedriverVersion: 126.0.6478.63 (df799988fdc9..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64162}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64162/devtoo..., se:cdpVersion: 127.0.6533.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 16e612b0cf2d43b0d28a9d6535d283d3
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+at POM.HomePagePOM.UGProgramList(HomePagePOM.java:784)
+at HomePage.HomePage_FunctionalTest.UGProgram(HomePage_FunctionalTest.java:233)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+at org.testng.TestNG.runSuites(TestNG.java:1134)
+at org.testng.TestNG.run(TestNG.java:1101)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UGProgram -->
+        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:HomePage.HomePage_FunctionalTest@6cb107fd]" started-at="2024-08-07T01:01:21 IST" name="CloseBrowser" finished-at="2024-08-07T01:01:21 IST" duration-ms="374" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseBrowser -->
+        <test-method is-config="true" signature="LaunchBrowser()[pri:0, instance:HomePage.HomePage_FunctionalTest@6cb107fd]" started-at="2024-08-07T01:01:21 IST" name="LaunchBrowser" finished-at="2024-08-07T01:01:23 IST" duration-ms="1491" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchBrowser -->
+        <test-method signature="PGPrograms()[pri:32, instance:HomePage.HomePage_FunctionalTest@6cb107fd]" started-at="2024-08-07T01:01:23 IST" name="PGPrograms" finished-at="2024-08-07T01:03:34 IST" duration-ms="130861" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PGPrograms -->
+        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:HomePage.HomePage_FunctionalTest@6cb107fd]" started-at="2024-08-07T01:03:34 IST" name="CloseBrowser" finished-at="2024-08-07T01:03:35 IST" duration-ms="1374" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseBrowser -->
+        <test-method is-config="true" signature="LaunchBrowser()[pri:0, instance:HomePage.HomePage_FunctionalTest@6cb107fd]" started-at="2024-08-07T01:03:35 IST" name="LaunchBrowser" finished-at="2024-08-07T01:03:37 IST" duration-ms="2216" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchBrowser -->
+        <test-method signature="Printprograms()[pri:33, instance:HomePage.HomePage_FunctionalTest@6cb107fd]" started-at="2024-08-07T01:03:37 IST" name="Printprograms" finished-at="2024-08-07T01:03:44 IST" duration-ms="6977" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Printprograms -->
+        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:HomePage.HomePage_FunctionalTest@6cb107fd]" started-at="2024-08-07T01:03:44 IST" name="CloseBrowser" finished-at="2024-08-07T01:03:45 IST" duration-ms="498" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseBrowser -->
+      </class> <!-- HomePage.HomePage_FunctionalTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
