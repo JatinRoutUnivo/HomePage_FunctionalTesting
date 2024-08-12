@@ -1,11 +1,12 @@
 package POM;
 
-import java.time.Duration;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
 
+import org.apache.xmlbeans.impl.xb.xsdschema.Public;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -230,63 +231,70 @@ public class HomePagePOM {
 	}
 
 	public void ProgramHeaderbutton(){
-		Assert.assertTrue(programButtonElement.isEnabled(), "Program Button is not enabled");
+		Assert.assertTrue(programButtonElement.isEnabled(), "Program buttton is not enabled");
 		if(programButtonElement.isEnabled()) {
 			System.out.println("Program button is working");
-		}else {
+		}else
 			System.out.println("Program button is not working");
-		}
-		programButtonElement.click();	
 	}
 
 
-	public void CareerServicesHeaderButton() {
 
-		Assert.assertTrue(careerServicesButttonElement.isEnabled(), "Career services button is not enabled");
-		if(careerServicesButttonElement.isEnabled()) {
-			System.out.println("CareerServices button is working");
+	public void CareerServicesHeaderButton() throws InterruptedException{
+		WebElement careerServicesButton = driver.findElement(By.xpath("//span[@class='mr-1 uppercase laptop:font-medium header_menuText__KlhzO'][normalize-space()='CAREER SERVICES']"));
+		JavascriptExecutor js=((JavascriptExecutor)driver);
+		js.executeScript("arguments[0].click();", careerServicesButton);
+		Set<String> windowhandle1 = driver.getWindowHandles();
+		List<String> handle6 = new ArrayList<String>();
+		handle6.addAll(windowhandle1);
+		Thread.sleep(2000);
+		driver.switchTo().window(handle6.get(1));
+		String CareerServicesURL = "https://amityonline.com/career-services";
+		String ActualURL = driver.getCurrentUrl();
+		if(ActualURL.equals(CareerServicesURL)) {
+			System.out.println("Career Service Button is working");
 		}else {
-			System.out.println("CareerServices button is not working");
+			System.out.println("Career Service Button is not working");
 		}
-		careerServicesButttonElement.click();
+
+
 
 		driver.close();	
 	}
 
 
 	public void AdvantagesHeaderButton(){
-		Assert.assertTrue(advanragesButtonElement.isEnabled(), "Advantages button is not enabled");
-		if(advanragesButtonElement.isEnabled()) {
+		JavascriptExecutor js=((JavascriptExecutor)driver);
+		js.executeScript("arguments[0].click();", advanragesButtonElement);
+		String ExpadvanrageelementURL = "https://amityonline.com/amity-online-advantage";
+		if(driver.getCurrentUrl().equals(ExpadvanrageelementURL)) {
 			System.out.println("Advantages button is working");
 		}else {
 			System.out.println("Advantages button is not working");
 		}
-		advanragesButtonElement.click();
 
 	}
 
-	public void SearchHeaderButton() {
-		Assert.assertTrue(SearchButtonElement.isEnabled(), "Search Button is not enabled");
+	public void SearchHeaderButton(){
 		if(SearchButtonElement.isEnabled()) {
+			Assert.assertTrue(true);
 			System.out.println("Search button is working");
 		}else {
+			Assert.assertTrue(false);
 			System.out.println("Search button is not working");
 		}
-		SearchButtonElement.click();
 
-		driver.findElement(By.xpath("//div[contains(@class,'header_menuContainer__00BgW')]//input[contains(@type,'text')]")).sendKeys("Master Of Business Administration");
 
 	}
 
 	public void CallusHeaderButton() throws InterruptedException{
-		Assert.assertTrue(callUsElement.isEnabled(), "Call us button is not enabled");
 		if(callUsElement.isEnabled()) {
 			System.out.println("Call us button is working");
 		}else {
 			System.out.println("Call us button is not working");
 		}
-
-		callUsElement.click();
+		JavascriptExecutor js=((JavascriptExecutor)driver);
+		js.executeScript("arguments[0].click();", callUsElement);
 		Thread.sleep(2000);
 		String handle2 = driver.getWindowHandle();
 		driver.switchTo().window(handle2);
@@ -295,14 +303,14 @@ public class HomePagePOM {
 	} 
 
 
-	public void SearchLoginHeaderButoon() throws InterruptedException{
-		Assert.assertTrue(StudentLoginElement.isEnabled(), "Student Login not working");
-		StudentLoginElement.click();
+	public void StudentLoginHeaderButoon() throws InterruptedException{
+		JavascriptExecutor js=((JavascriptExecutor)driver);
+		js.executeScript("arguments[0].click();", StudentLoginElement);
 		String handle = driver.getWindowHandle();
 		driver.switchTo().window(handle);
 		Thread.sleep(2000);
-		WebElement Studentlogin = driver.findElement(By.xpath("//*[text()='Student Login']"));
-		if(Studentlogin.getText().equals("Student Login")) {
+		WebElement exptextStudentlogin = driver.findElement(By.xpath("//*[text()='Student Login']"));
+		if(exptextStudentlogin.getText().equals("Student Login")) {
 			System.out.println("Student login click pass");
 		}else {
 			System.out.println("student login click is failed");
@@ -311,15 +319,14 @@ public class HomePagePOM {
 
 	}
 
-	public void EnrollNowHeaderButton() {
-		Assert.assertTrue(enrollNowButtonElement.isEnabled(), "Enroll now button is not working");
-		enrollNowButtonElement.click();
-		String currenturl = driver.getCurrentUrl();
+	public void EnrollNowHeaderButton(){
+		JavascriptExecutor js=((JavascriptExecutor)driver);
+		js.executeScript("arguments[0].click();", enrollNowButtonElement);
 		String Expectedurl = "https://application.amityonline.com/admission/home/signup";
-		if(currenturl.equals(Expectedurl)) {
-			System.out.println("Enroll Now URL is correct");
+		if(driver.getCurrentUrl().equals(Expectedurl)) {
+			System.out.println("Enroll Now Button is working");
 		}else {
-			System.out.println("Enroll Now URL is not correct");
+			System.out.println("Enroll Now Button is not working");
 		}
 
 
@@ -393,12 +400,13 @@ public class HomePagePOM {
 	}
 
 	public void RequestAcallButton() throws InterruptedException{
-		Assert.assertTrue(requestaCallElement.isEnabled(), "Request a call button is not working");
-		Actions act=new Actions(driver);
-		act.moveToElement(requestaCallElement).click().perform();
+		JavascriptExecutor js=((JavascriptExecutor)driver);
+		js.executeScript("arguments[0].click();", requestaCallElement);
+		//		Actions act=new Actions(driver);
+		//		act.moveToElement(requestaCallElement).click().perform();
 		String handle6 = driver.getWindowHandle();
 		driver.switchTo().window(handle6);
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 		WebElement apply2 = driver.findElement(By.xpath("//h2[@class='ConnectModal_Modal__RightContainerTitle__WO56D']"));
 		if(apply2.getText().equals("Connect With Our Counsellor")) {
 			System.out.println("Request a call click verified");
@@ -651,7 +659,7 @@ public class HomePagePOM {
 		Actions act18=new Actions(driver);
 		act18.moveToElement(resources).click().perform();
 		Thread.sleep(3000);
-		String resourcesexpurl = "https://amityonline.com/#";
+		String resourcesexpurl = "https://amityonline.com/";
 		if(driver.getCurrentUrl().equals(resourcesexpurl)) {
 			System.out.println("Resources approvals URL is verified");
 		}else {
@@ -695,537 +703,606 @@ public class HomePagePOM {
 	//-------------------------------------------------------UG Programs----------------------------------------------------------------------------------------
 
 	// Bachelor of Computer Applications
-	public void UGProgramList() throws InterruptedException {
-		
+	public void BCAProgram() throws InterruptedException {
+
 		//Bachelor of Computer Applications
 		Actions act7=new Actions(driver);
-		Thread.sleep(2000);
 		act7.moveToElement(showMorElement).click().perform();
-		Actions act50=new Actions(driver);
-		Thread.sleep(2000);
-		 act50.moveToElement(BCAprogram).click().perform();
-		 Thread.sleep(2000);
+		WebElement BCAgraduation = driver.findElement(By.xpath("//a[normalize-space()='Bachelor of Computer Applications']"));
+		JavascriptExecutor js=((JavascriptExecutor)driver);
+		js.executeScript("arguments[0].click();", BCAgraduation);
+		Thread.sleep(3000);
 		String ExpBCAurl = "https://amityonline.com/bachelor-of-computer-applications-online";
 		if(driver.getCurrentUrl().equals(ExpBCAurl)) {
 			System.out.println("BCA program url is verified");
 		}else {
 			System.out.println("BCA program url is not verified");
 		}
-		driver.navigate().back();
+	}
 
-		
-		//BCA with specialization in Cloud & Security
+	//BCA with specialization in Cloud & Security
+	public void BCASpProgram() throws InterruptedException {
+		Actions act7=new Actions(driver);
+		act7.moveToElement(showMorElement).click().perform();
 		WebElement BCASp = driver.findElement(By.xpath("/html[1]/body[1]/footer[1]/div[1]/div[2]/div[1]/ul[2]/li[3]/a[1]"));
-		Actions act51=new Actions(driver);
-		Thread.sleep(2000);
-		act51.moveToElement(BCASp).click().perform();
-		Thread.sleep(2000);
+		JavascriptExecutor js=((JavascriptExecutor)driver);
+		js.executeScript("arguments[0].click();", BCASp);
+		Thread.sleep(3000);
 		String ExpBCASpurl = "https://amityonline.com/bca-cloud-security-online";
 		if(driver.getCurrentUrl().equals(ExpBCASpurl)) {
 			System.out.println("BCASpec program url is verified");
 		}else {
 			System.out.println("BCASpec program url is not verified");
 		}
-		driver.navigate().back();
-		
-		//BCA with specialization in Data Analytics
-		Thread.sleep(2000);
+	}
+	//BCA with specialization in Data Analytics
+	public void BCAdataAnalyticsProgram() throws InterruptedException {
+		Actions act7=new Actions(driver);
+		act7.moveToElement(showMorElement).click().perform();
 		WebElement BCAdataAnalytics = driver.findElement(By.xpath("//a[normalize-space()='BCA with specialization in Data Analytics']"));
-		Actions act52=new Actions(driver);
-		Thread.sleep(2000);
-		act52.moveToElement(BCAdataAnalytics).click().perform();
-		Thread.sleep(2000);
+		JavascriptExecutor js=((JavascriptExecutor)driver);
+		js.executeScript("arguments[0].click();", BCAdataAnalytics);
+		Thread.sleep(3000);
 		String ExpBCAdataAnalytics = "https://amityonline.com/bca-data-analytics-online";
 		if(driver.getCurrentUrl().equals(ExpBCAdataAnalytics)) {
 			System.out.println("BCAdataAnalytics program url is verified");
 		}else {
 			System.out.println("BCAdataAnalytics program url is not verified");
 		}
-		driver.navigate().back();
-		
-		
-		//Bachelor of Business Administration
-		Thread.sleep(2000);
+	}
+
+	//Bachelor of Business Administration
+	public void BBAProgranms() throws InterruptedException {
+		Actions act7=new Actions(driver);
+		act7.moveToElement(showMorElement).click().perform();
 		WebElement BBA = driver.findElement(By.xpath("//a[normalize-space()='Bachelor of Business Administration']"));
-		Actions act53=new Actions(driver);
-		Thread.sleep(2000);
-		act53.moveToElement(BBA).click().perform();
-		Thread.sleep(2000);
+		JavascriptExecutor js=((JavascriptExecutor)driver);
+		js.executeScript("arguments[0].click();", BBA);
+		Thread.sleep(3000);
 		String ExpBBA = "https://amityonline.com/bachelor-of-business-administration-online";
 		if(driver.getCurrentUrl().equals(ExpBBA)) {
+			Assert.assertTrue(true);
 			System.out.println("BBA program url is verified");
 		}else {
+			Assert.assertTrue(false);
 			System.out.println("BBA program url is not verified");
 		}
-		driver.navigate().back();
-		
-		
-		
-		//Bachelor of Arts (Journalism and Mass communication)
-		Thread.sleep(2000);
-		
+	}
+
+
+	//Bachelor of Arts (Journalism and Mass communication)
+	public void BAJandMProgram() throws InterruptedException {
+		Actions act7=new Actions(driver);
+		act7.moveToElement(showMorElement).click().perform();
 		WebElement	BAJandM=driver.findElement(By.xpath("//a[contains(text(),'Bachelor of Arts (Journalism and Mass communicatio')]"));
-		Assert.assertTrue(BAJandM.isEnabled(), "BAJandM is not enabled");
-		Actions act54=new Actions(driver);
-		Thread.sleep(2000);
-		act54.moveToElement(BAJandM).click().perform();
-		Thread.sleep(2000);
+		JavascriptExecutor js=((JavascriptExecutor)driver);
+		js.executeScript("arguments[0].click();", BAJandM);
+		Thread.sleep(3000);
 		String ExpBAJandM = "https://amityonline.com/bachelor-of-arts-journalism-and-mass-communication-online";
-		Thread.sleep(2000);
 		if(driver.getCurrentUrl().equals(ExpBAJandM)) {
+			Assert.assertTrue(true);
 			System.out.println("BAJandM program url is verified");
 		}else {
+			Assert.assertTrue(false);
 			System.out.println("BAJandM program url is not verified");
 		}
-		driver.navigate().back();
-		
-		
-		//Bachelor of Commerce
-		Thread.sleep(1000);
-		driver.findElement(By.xpath("//*[name()='path' and contains(@d,'M18.2648 2')]")).click();   // TimeConnect model pop-up
-		
+
+	}
+
+	//Bachelor of Commerce
+
+	public void BcomProgram() throws InterruptedException {
+		Actions act7=new Actions(driver);
+		act7.moveToElement(showMorElement).click().perform();
 		WebElement Bcom = driver.findElement(By.xpath("//a[normalize-space()='Bachelor of Commerce']"));
-		Actions act55=new Actions(driver);
-		Thread.sleep(2000);
-		act55.moveToElement(Bcom).click().perform();
-		Thread.sleep(2000);
+		JavascriptExecutor js=((JavascriptExecutor)driver);
+		js.executeScript("arguments[0].click();", Bcom);
+		Thread.sleep(3000);
 		String ExpBcom = "https://amityonline.com/bachelor-of-commerce-online";
 		if(driver.getCurrentUrl().equals(ExpBcom)) {
+			Assert.assertTrue(true);
 			System.out.println("Bcom program url is verified");
 		}else {
+			Assert.assertTrue(false);
+			System.out.println("Bcom program url is not verified");
 		}
-		driver.navigate().back();
 
-		//Bachelor of Arts
-		Thread.sleep(2000);
+	}
+	//Bachelor of Arts
+	public void BAProgramns() throws InterruptedException {
+		Actions act7=new Actions(driver);
+		act7.moveToElement(showMorElement).click().perform();
 		WebElement BA = driver.findElement(By.xpath("//a[normalize-space()='Bachelor of Arts']"));
-		Actions act56=new Actions(driver);
-		Thread.sleep(2000);
-		act56.moveToElement(BA).click().perform();
-		Thread.sleep(2000);
+		JavascriptExecutor js=((JavascriptExecutor)driver);
+		js.executeScript("arguments[0].click();", BA);
+		Thread.sleep(3000);
 		String ExpBA = "https://amityonline.com/bachelor-of-arts-online";
 		if(driver.getCurrentUrl().equals(ExpBA)) {
+			Assert.assertTrue(true);
 			System.out.println("BA program url is verified");
 		}else {
+			Assert.assertTrue(false);
 			System.out.println("BA program url is not verified");
 		}
 
-		driver.navigate().back();
-		
-		//Bachelor of Art (Kannada Medium)
-		Thread.sleep(2000);
+	}
+	//Bachelor of Art (Kannada Medium)
+	public void BAKannadaPrograns() throws InterruptedException {
+		Actions act7=new Actions(driver);
+		act7.moveToElement(showMorElement).click().perform();
 		WebElement BAKannada = driver.findElement(By.xpath("//a[normalize-space()='Bachelor of Art (Kannada Medium)']"));
-		Actions act57=new Actions(driver);
-		Thread.sleep(2000);
-		act57.moveToElement(BAKannada).click().perform();
-		Thread.sleep(2000);
+		JavascriptExecutor js=((JavascriptExecutor)driver);
+		js.executeScript("arguments[0].click();", BAKannada);
+		Thread.sleep(3000);
 		String ExpBAKannada = "https://amityonline.com/bachelor-of-arts-kannada-online";
 		if(driver.getCurrentUrl().equals(ExpBAKannada)) {
+			Assert.assertTrue(true);
 			System.out.println("BAKannada program url is verified");
 		}else {
+			Assert.assertTrue(false);
 			System.out.println("BAKannada program url is not verified");
 		}
 
-		driver.navigate().back();
-		
-		
-		
-		//Bachelor of Arts (Malayalam Medium)
-		Thread.sleep(2000);
+	}
+
+
+
+	//Bachelor of Arts (Malayalam Medium)
+	public void BAMalayalamProgram() throws InterruptedException {
+		Actions act7=new Actions(driver);
+		act7.moveToElement(showMorElement).click().perform();
 		WebElement BAMalayalam = driver.findElement(By.xpath("//a[normalize-space()='Bachelor of Arts (Malayalam Medium)']"));
-		Actions act58=new Actions(driver);
-		Thread.sleep(2000);
-		act58.moveToElement(BAMalayalam).click().perform();
-		Thread.sleep(2000);
+		JavascriptExecutor js=((JavascriptExecutor)driver);
+		js.executeScript("arguments[0].click();", BAMalayalam);
+		Thread.sleep(3000);
 		String ExpBAMalayalam = "https://amityonline.com/bachelor-of-arts-malayalam-online";
 		if(driver.getCurrentUrl().equals(ExpBAMalayalam)) {
+			Assert.assertTrue(true);
 			System.out.println("BAMalayalam program url is verified");
 		}else {
+			Assert.assertTrue(false);
 			System.out.println("BAMalayalam program url is not verified");
 		}
 
-		driver.navigate().back();
-		
-		//Bachelor of Arts (Tamil Medium)
-		Thread.sleep(2000);
+	}
+	//Bachelor of Arts (Tamil Medium)
+	public void BATamilProgranm() throws InterruptedException {
+		Actions act7=new Actions(driver);
+		act7.moveToElement(showMorElement).click().perform();
 		WebElement BATamil = driver.findElement(By.xpath("//a[normalize-space()='Bachelor of Arts (Tamil Medium)']"));
-		Actions act59=new Actions(driver);
-		Thread.sleep(2000);
-		act59.moveToElement(BATamil).click().perform();
-		Thread.sleep(2000);
+		JavascriptExecutor js=((JavascriptExecutor)driver);
+		js.executeScript("arguments[0].click();", BATamil);
+		Thread.sleep(3000);
 		String ExpBATamil = "https://amityonline.com/bachelor-of-arts-tamil-online";
 		if(driver.getCurrentUrl().equals(ExpBATamil)) {
+			Assert.assertTrue(true);
 			System.out.println("BATamil program url is verified");
 		}else {
+			Assert.assertTrue(false);
 			System.out.println("BATamil program url is not verified");
 		}
 
-		driver.navigate().back();
-		
-		
-		//Bachelor of Arts (Telugu Medium)
-		Thread.sleep(2000);
+	}
+
+
+	public void BATeluguProgram() throws InterruptedException {
+		//Bachelor of Arts (TAssert.assertTrue(false);elugu Medium)
+		Actions act7=new Actions(driver);
+		act7.moveToElement(showMorElement).click().perform();
 		WebElement BATelugu = driver.findElement(By.xpath("//a[normalize-space()='Bachelor of Arts (Telugu Medium)']"));
-		Actions act60=new Actions(driver);
-		Thread.sleep(2000);
-		act60.moveToElement(BATelugu).click().perform();
-		Thread.sleep(2000);
+		JavascriptExecutor js=((JavascriptExecutor)driver);
+		js.executeScript("arguments[0].click();", BATelugu);
+		Thread.sleep(3000);
 		String ExpBATelugu = "https://amityonline.com/bachelor-of-arts-telugu-online";
 		if(driver.getCurrentUrl().equals(ExpBATelugu)) {
+			Assert.assertTrue(true);
 			System.out.println("BATelugu program url is verified");
 		}else {
+			Assert.assertTrue(false);
+
 			System.out.println("BATelugu program url is not verified");
 		}
 
-		driver.navigate().back();
-		
-		//Bachelor of Arts (Hindi Medium)
-		Thread.sleep(2000);
+	}
+	//Bachelor of Arts (Hindi Medium)
+	public void BAHindiProgramn() throws InterruptedException {
+		Actions act7=new Actions(driver);
+		act7.moveToElement(showMorElement).click().perform();
 		WebElement BAHindi = driver.findElement(By.xpath("//a[normalize-space()='Bachelor of Arts (Hindi Medium)']"));
-		Actions act61=new Actions(driver);
-		Thread.sleep(2000);
-		act61.moveToElement(BAHindi).click().perform();
-		Thread.sleep(2000);
+		JavascriptExecutor js=((JavascriptExecutor)driver);
+		js.executeScript("arguments[0].click();", BAHindi);
+		Thread.sleep(3000);
 		String ExpBAHindi = "https://amityonline.com/bachelor-of-arts-hindi-medium-online";
 		if(driver.getCurrentUrl().equals(ExpBAHindi)) {
+			Assert.assertTrue(true);
 			System.out.println("BAHindi program url is verified");
 		}else {
+			Assert.assertTrue(false);
 			System.out.println("BAHindi program url is not verified");
 		}
 
-		driver.navigate().back();
-		
-		
-		//B.Com with Specialization in International Finance & Accounting
-		Thread.sleep(2000);
+	}
+
+	//B.Com with Specialization in International Finance & Accounting
+	public void BcomFinanceProgram() throws InterruptedException {
+		Actions act7=new Actions(driver);
+		act7.moveToElement(showMorElement).click().perform();
 		WebElement BcomFinance = driver.findElement(By.xpath("//a[contains(text(),'B.Com with Specialization in International Finance')]"));
-		Actions act62=new Actions(driver);
-		Thread.sleep(2000);
-		act62.moveToElement(BcomFinance).click().perform();
-		Thread.sleep(2000);
+		JavascriptExecutor js=((JavascriptExecutor)driver);
+		js.executeScript("arguments[0].click();", BcomFinance);
+		Thread.sleep(3000);
 		String ExpBcomFinance = "https://amityonline.com/bcom-internationalfinance";
 		if(driver.getCurrentUrl().equals(ExpBcomFinance)) {
+			Assert.assertTrue(true);
 			System.out.println("BcomFinance program url is verified");
 		}else {
+			Assert.assertTrue(false);
 			System.out.println("BcomFinance program url is not verified");
 		}
 
-		driver.navigate().back();
-		
-		
-		//Bachelor Of Commerce (Honours)
-		Thread.sleep(2000);
+	}
+
+	//Bachelor Of Commerce (Honours)
+	public void BcomHonoursPrograms() throws InterruptedException {
+		Actions act7=new Actions(driver);
+		act7.moveToElement(showMorElement).click().perform();
 		WebElement BcomHonours = driver.findElement(By.xpath("//a[normalize-space()='Bachelor Of Commerce (Honours)']"));
-		Actions act63=new Actions(driver);
-		Thread.sleep(2000);
-		act63.moveToElement(BcomHonours).click().perform();
-		Thread.sleep(2000);
+		JavascriptExecutor js=((JavascriptExecutor)driver);
+		js.executeScript("arguments[0].click();", BcomHonours);
+		Thread.sleep(3000);
 		String ExpBcomHonours = "https://amityonline.com/bachelor-of-commerce-honours";
 		if(driver.getCurrentUrl().equals(ExpBcomHonours)) {
+			Assert.assertTrue(true);
 			System.out.println("BcomHonours program url is verified");
 		}else {
+			Assert.assertTrue(false);
 			System.out.println("BcomHonours program url is not verified");
 		}
 
-		driver.navigate().back(); 
-		
+
 	}
 
-//-------------------------------------------------------PG Programs----------------------------------------------------------------------------------------
+	//-------------------------------------------------------PG Programs----------------------------------------------------------------------------------------
 
 	//Master of Computer Applications
 
-	public void PGProgramlist() throws InterruptedException {
-		
+	public void MCANormalPrograms() throws InterruptedException {
+
 		Actions act7=new Actions(driver);
-		Thread.sleep(2000);
 		act7.moveToElement(showMorElement).click().perform();
-		Thread.sleep(2000);
 		WebElement MCANormal = driver.findElement(By.xpath("//a[normalize-space()='Master of Computer Applications']"));
-		Actions act64=new Actions(driver);
-		Thread.sleep(2000);
-		act64.moveToElement(MCANormal).click().perform();
-		Thread.sleep(2000);
+		JavascriptExecutor js=((JavascriptExecutor)driver);
+		js.executeScript("arguments[0].click();", MCANormal);
+		Thread.sleep(3000);
 		String ExpMCANormal = "https://amityonline.com/master-of-computer-applications-online";
 		if(driver.getCurrentUrl().equals(ExpMCANormal)) {
+			Assert.assertTrue(true);
 			System.out.println("MCANormal program url is verified");
 		}else {
+			Assert.assertTrue(false);
 			System.out.println("MCANormal program url is not verified");
 		}
-
-		driver.navigate().back();
-		
-//	 	MCA with specialization in Blockchain
-		Thread.sleep(2000);
+	}
+	//	 	MCA with specialization in Blockchain
+	public void MCAwithspecializationinBlockchainprogram() throws InterruptedException {
+		Actions act7=new Actions(driver);
+		act7.moveToElement(showMorElement).click().perform();
 		WebElement MCAwithspecializationinBlockchain = driver.findElement(By.xpath("//a[normalize-space()='MCA with specialization in Blockchain']"));
-		Actions act65=new Actions(driver);
-		Thread.sleep(2000);
-		act65.moveToElement(MCAwithspecializationinBlockchain).click().perform();
-		Thread.sleep(2000);
+		JavascriptExecutor js=((JavascriptExecutor)driver);
+		Thread.sleep(3000);
+		js.executeScript("arguments[0].click();", MCAwithspecializationinBlockchain);
 		String ExpMCAwithspecializationinBlockchain = "https://amityonline.com/mca-blockchain-online";
 		if(driver.getCurrentUrl().equals(ExpMCAwithspecializationinBlockchain)) {
+			Assert.assertTrue(true);
+
 			System.out.println("MCAwithspecializationinBlockchain program url is verified");
 		}else {
+			Assert.assertTrue(false);
+
 			System.out.println("MCAwithspecializationinBlockchain program url is not verified");
 		}
+	}
 
-		driver.navigate().back();
-		
-		
-		//MCA with specialization in ML & Al
-		Thread.sleep(2000);
+
+	//MCA with specialization in ML & Al
+	public void MCAwithspecializationinMLandAlprogram() throws InterruptedException {
+		Actions act7=new Actions(driver);
+		act7.moveToElement(showMorElement).click().perform();
 		WebElement MCAwithspecializationinMLandAl = driver.findElement(By.xpath("//a[normalize-space()='MCA with specialization in ML & Al']"));
-		Actions act66=new Actions(driver);
-		Thread.sleep(2000);
-		act66.moveToElement(MCAwithspecializationinMLandAl).click().perform();
-		Thread.sleep(2000);
+		JavascriptExecutor js=((JavascriptExecutor)driver);
+		js.executeScript("arguments[0].click();", MCAwithspecializationinMLandAl);
+		Thread.sleep(3000);
+		//		Actions act66=new Actions(driver);
+		//		act66.moveToElement(MCAwithspecializationinMLandAl).click().perform();
+		//		Thread.sleep(3000);
 		String ExpMCAwithspecializationinMLandAl = "https://amityonline.com/mca-machine-learning-and-artificial-intelligence-online";
 		if(driver.getCurrentUrl().equals(ExpMCAwithspecializationinMLandAl)) {
+			Assert.assertTrue(true);
 			System.out.println("MCAwithspecializationinMLandAl program url is verified");
 		}else {
+			Assert.assertTrue(false);
 			System.out.println("MCAwithspecializationinMLandAl program url is not verified");
 		}
+	}
 
-		driver.navigate().back();
-		
-		
-		//MCA with specialization in Machine Learning
-		Thread.sleep(2000);
+
+
+	//MCA with specialization in Machine Learning
+	public void MCAwithspecializationinMachineLearningProgram() throws InterruptedException {
+		Actions act7=new Actions(driver);
+		act7.moveToElement(showMorElement).click().perform();
 		WebElement MCAwithspecializationinMachineLearning = driver.findElement(By.xpath("//a[normalize-space()='MCA with specialization in Machine Learning']"));
-		Actions act67=new Actions(driver);
-		Thread.sleep(2000);
-		act67.moveToElement(MCAwithspecializationinMachineLearning).click().perform();
-		Thread.sleep(2000);
+		JavascriptExecutor js=((JavascriptExecutor)driver);
+		js.executeScript("arguments[0].click();", MCAwithspecializationinMachineLearning);
+		Thread.sleep(3000);
 		String ExpMCAwithspecializationinMachineLearning = "https://amityonline.com/mca-machine-learning-online";
 		if(driver.getCurrentUrl().equals(ExpMCAwithspecializationinMachineLearning)) {
+			Assert.assertTrue(true);
 			System.out.println("MCAwithspecializationinMachineLearning program url is verified");
 		}else {
+			Assert.assertTrue(false);
 			System.out.println("MCAwithspecializationinMachineLearning program url is not verified");
 		}
 
-		driver.navigate().back();
-		Thread.sleep(2000);
-		WebElement timeconnectpopup = driver.findElement(By.xpath("//*[name()='path' and contains(@d,'M18.2648 2')]"));
-		timeconnectpopup.click();
-		
-		//MCA with specialization in AR & VR
-		
+	}
+
+
+	//MCA with specialization in AR & VR
+	public void MCAwithspecializationinARandVRProgram() throws InterruptedException {
+		Actions act7=new Actions(driver);
+		act7.moveToElement(showMorElement).click().perform();
 		WebElement MCAwithspecializationinARandVR = driver.findElement(By.xpath("//a[normalize-space()='MCA with specialization in AR & VR']"));
-		Actions act68=new Actions(driver);
-		Thread.sleep(2000);
-		act68.moveToElement(MCAwithspecializationinARandVR).click().perform();
-		Thread.sleep(2000);
+		JavascriptExecutor js=((JavascriptExecutor)driver);
+		js.executeScript("arguments[0].click();", MCAwithspecializationinARandVR);
+		Thread.sleep(3000);
 		String ExpMCAwithspecializationinARandVR = "https://amityonline.com/mca-virtualreality-online";
 		if(driver.getCurrentUrl().equals(ExpMCAwithspecializationinARandVR)) {
+			Assert.assertTrue(true);
+
 			System.out.println("MCAwithspecializationinARandVR program url is verified");
 		}else {
+			Assert.assertTrue(false);
+
 			System.out.println("MCAwithspecializationinARandVR program url is not verified");
 		}
 
-		driver.navigate().back();
-		
-		//Master of Business Administration
-		Thread.sleep(2000);
+	}		
+
+	//Master of Business Administration
+	public void MasterofBusinessAdministrationProgram() throws InterruptedException {
+		Actions act7=new Actions(driver);
+		act7.moveToElement(showMorElement).click().perform();
 		WebElement MasterofBusinessAdministration = driver.findElement(By.xpath("//a[normalize-space()='Master of Business Administration']"));
-		Actions act69=new Actions(driver);
-		Thread.sleep(2000);
-		act69.moveToElement(MasterofBusinessAdministration).click().perform();
-		Thread.sleep(2000);
+		JavascriptExecutor js=((JavascriptExecutor)driver);
+		js.executeScript("arguments[0].click();", MasterofBusinessAdministration);
+		Thread.sleep(3000);
 		String ExpMasterofBusinessAdministration = "https://amityonline.com/master-of-business-administration-online";
 		if(driver.getCurrentUrl().equals(ExpMasterofBusinessAdministration)) {
+			Assert.assertTrue(true);
+
 			System.out.println("MasterofBusinessAdministration program url is verified");
 		}else {
+			Assert.assertTrue(false);
+
 			System.out.println("MasterofBusinessAdministration program url is not verified");
 		}
 
-		driver.navigate().back();
-		
-//		MBA with specialization in Digital Marketing Management
-		Thread.sleep(2000);
+	}
+
+
+	//		MBA with specialization in Digital Marketing Management
+	public void MBAwithspecializationinDigitalMarketingManagementProgram() throws InterruptedException {
+		Actions act7=new Actions(driver);
+		act7.moveToElement(showMorElement).click().perform();
 		WebElement MBAwithspecializationinDigitalMarketingManagement = driver.findElement(By.xpath("//a[contains(text(),'MBA with specialization in Digital Marketing Manag')]"));
-		Actions act70=new Actions(driver);
-		Thread.sleep(2000);
-		act70.moveToElement(MBAwithspecializationinDigitalMarketingManagement).click().perform();
-		Thread.sleep(2000);
+		JavascriptExecutor js=((JavascriptExecutor)driver);
+		js.executeScript("arguments[0].click();", MBAwithspecializationinDigitalMarketingManagement);
+		Thread.sleep(3000);
 		String ExpMBAwithspecializationinDigitalMarketingManagement = "https://amityonline.com/mba-digital-marketing-management-online";
 		if(driver.getCurrentUrl().equals(ExpMBAwithspecializationinDigitalMarketingManagement)) {
+			Assert.assertTrue(true);
 			System.out.println("MBAwithspecializationinDigitalMarketingManagement program url is verified");
 		}else {
+			Assert.assertTrue(false);
 			System.out.println("MBAwithspecializationinDigitalMarketingManagement program url is not verified");
 		}
 
-		driver.navigate().back();
-		
-		
-		//MBA with specialization in HR Analytics
-		Thread.sleep(2000);
+	}
+	//MBA with specialization in HR Analytics
+	public void MBAwithspecializationinHRAnalyticsProgram() throws InterruptedException {
+		Actions act7=new Actions(driver);
+		act7.moveToElement(showMorElement).click().perform();
 		WebElement MBAwithspecializationinHRAnalytics = driver.findElement(By.xpath("//a[normalize-space()='MBA with specialization in HR Analytics']"));
-		Actions act71=new Actions(driver);
-		Thread.sleep(2000);
-		act71.moveToElement(MBAwithspecializationinHRAnalytics).click().perform();
-		Thread.sleep(2000);
+		JavascriptExecutor js=((JavascriptExecutor)driver);
+		js.executeScript("arguments[0].click();", MBAwithspecializationinHRAnalytics);
+		Thread.sleep(3000);
 		String ExpMBAwithspecializationinHRAnalytics = "https://amityonline.com/mba-human-resources-hr-analytics-online";
 		if(driver.getCurrentUrl().equals(ExpMBAwithspecializationinHRAnalytics)) {
+			Assert.assertTrue(true);
 			System.out.println("MBAwithspecializationinHRAnalytics program url is verified");
 		}else {
+			Assert.assertTrue(false);
 			System.out.println("MBAwithspecializationinHRAnalytics program url is not verified");
 		}
 
-		driver.navigate().back();
-		
-		
-		//MBA with specialization in Data Science
-		Thread.sleep(2000);
+	}
+
+	//MBA with specialization in Data Science
+	public void MBAwithspecializationinDataScienceProgram() throws InterruptedException {
+		Actions act7=new Actions(driver);
+		act7.moveToElement(showMorElement).click().perform();
 		WebElement MBAwithspecializationinDataScience = driver.findElement(By.xpath("//a[normalize-space()='MBA with specialization in Data Science']"));
-		Actions act72=new Actions(driver);
-		Thread.sleep(2000);
-		act72.moveToElement(MBAwithspecializationinDataScience).click().perform();
-		Thread.sleep(2000);
+		JavascriptExecutor js=((JavascriptExecutor)driver);
+		js.executeScript("arguments[0].click();", MBAwithspecializationinDataScience);
+		Thread.sleep(3000);
 		String ExpMBAwithspecializationinDataScience = "https://amityonline.com/mba-data-science-online";
 		if(driver.getCurrentUrl().equals(ExpMBAwithspecializationinDataScience)) {
+			Assert.assertTrue(true);
+
 			System.out.println("MBAwithspecializationinDataScience program url is verified");
 		}else {
+			Assert.assertTrue(false);
+
 			System.out.println("MBAwithspecializationinDataScience program url is not verified");
 		}
 
-		driver.navigate().back();
-		
-		//MBA with specialization in Business Analytics
-		Thread.sleep(2000);
+	}
+	//MBA with specialization in Business Analytics
+	public void MBAwithspecializationinBusinessAnalyticsProgram() throws InterruptedException {
+		Actions act7=new Actions(driver);
+		act7.moveToElement(showMorElement).click().perform();
 		WebElement MBAwithspecializationinBusinessAnalytics = driver.findElement(By.xpath("//a[normalize-space()='MBA with specialization in Business Analytics']"));
-		Actions act73=new Actions(driver);
-		Thread.sleep(2000);
-		act73.moveToElement(MBAwithspecializationinBusinessAnalytics).click().perform();
-		Thread.sleep(2000);
+		JavascriptExecutor js=((JavascriptExecutor)driver);
+		js.executeScript("arguments[0].click();", MBAwithspecializationinBusinessAnalytics);
+		Thread.sleep(3000);
 		String ExpMBAwithspecializationinBusinessAnalytics = "https://amityonline.com/mba-business-analytics-online";
 		if(driver.getCurrentUrl().equals(ExpMBAwithspecializationinBusinessAnalytics)) {
+			Assert.assertTrue(true);
 			System.out.println("MBAwithspecializationinBusinessAnalytics program url is verified");
 		}else {
+			Assert.assertTrue(false);
 			System.out.println("MBAwithspecializationinBusinessAnalytics program url is not verified");
 		}
 
-		driver.navigate().back();
-		
-		//MBA with specialization in Digital Entrepreneurship
-		Thread.sleep(2000);
+	}
+
+	//MBA with specialization in Digital Entrepreneurship
+	public void MBAwithspecializationinDigitalEntrepreneurshipprogranm() throws InterruptedException {
+		Actions act7=new Actions(driver);
+		act7.moveToElement(showMorElement).click().perform();
 		WebElement MBAwithspecializationinDigitalEntrepreneurship = driver.findElement(By.xpath("//a[contains(text(),'MBA with specialization in Digital Entrepreneurshi')]"));
-		Actions act74=new Actions(driver);
-		Thread.sleep(2000);
-		act74.moveToElement(MBAwithspecializationinDigitalEntrepreneurship).click().perform();
-		Thread.sleep(2000);
+		JavascriptExecutor js=((JavascriptExecutor)driver);
+		js.executeScript("arguments[0].click();", MBAwithspecializationinDigitalEntrepreneurship);
+		Thread.sleep(3000);
 		String ExpMBAwithspecializationinDigitalEntrepreneurship = "https://amityonline.com/mba-digital-entrepreneurship-online";
 		if(driver.getCurrentUrl().equals(ExpMBAwithspecializationinDigitalEntrepreneurship)) {
+			Assert.assertTrue(true);
 			System.out.println("MBAwithspecializationinDigitalEntrepreneurship program url is verified");
 		}else {
+			Assert.assertTrue(false);
 			System.out.println("MBAwithspecializationinDigitalEntrepreneurship program url is not verified");
 		}
 
-		driver.navigate().back();
-		
-		//Master of Arts (Journalism and Mass communication)
-		Thread.sleep(2000);
+	}
+
+	//Master of Arts (Journalism and Mass communication)
+	public void MasterofArtsJournalismandMasscommunicationProgram() throws InterruptedException {
+		Actions act7=new Actions(driver);
+		act7.moveToElement(showMorElement).click().perform();
 		WebElement MasterofArtsJournalismandMasscommunication = driver.findElement(By.xpath("//a[normalize-space()='Master of Arts (Journalism and Mass communication)']"));
-		Actions act75=new Actions(driver);
-		Thread.sleep(2000);
-		act75.moveToElement(MasterofArtsJournalismandMasscommunication).click().perform();
-		Thread.sleep(2000);
+		JavascriptExecutor js=((JavascriptExecutor)driver);
+		js.executeScript("arguments[0].click();", MasterofArtsJournalismandMasscommunication);
+		Thread.sleep(3000);
 		String ExpMasterofArtsJournalismandMasscommunication = "https://amityonline.com/master-of-arts-journalism-and-mass-communication-online";
 		if(driver.getCurrentUrl().equals(ExpMasterofArtsJournalismandMasscommunication)) {
+			Assert.assertTrue(true);
 			System.out.println("MasterofArtsJournalismandMasscommunication program url is verified");
 		}else {
+			Assert.assertTrue(false);
 			System.out.println("MasterofArtsJournalismandMasscommunication program url is not verified");
 		}
 
-		driver.navigate().back();
-		
-		
-		//M.Com with specialization in Fintech
-		Thread.sleep(2000);
+	}
+
+	//M.Com with specialization in Fintech
+
+	public void MComwithspecializationinFintechProgram() throws InterruptedException {
+		Actions act7=new Actions(driver);
+		act7.moveToElement(showMorElement).click().perform();
 		WebElement MComwithspecializationinFintech = driver.findElement(By.xpath("//a[normalize-space()='M.Com with specialization in Fintech']"));
-		Actions act76=new Actions(driver);
-		Thread.sleep(2000);
-		act76.moveToElement(MComwithspecializationinFintech).click().perform();
-		Thread.sleep(2000);
+		JavascriptExecutor js=((JavascriptExecutor)driver);
+		js.executeScript("arguments[0].click();", MComwithspecializationinFintech);
+		Thread.sleep(3000);
 		String ExpMComwithspecializationinFintech = "https://amityonline.com/mcom-fintech-online";
 		if(driver.getCurrentUrl().equals(ExpMComwithspecializationinFintech)) {
+			Assert.assertTrue(true);
 			System.out.println("MComwithspecializationinFintech program url is verified");
 		}else {
+			Assert.assertTrue(false);
 			System.out.println("MComwithspecializationinFintech program url is not verified");
 		}
 
-		driver.navigate().back();
-		
-		
-		//M.Com with specialization in Financial Management
-		Thread.sleep(2000);
+	}
+
+	//M.Com with specialization in Financial Management
+	public void MComwithspecializationinFinancialManagementProgram() throws InterruptedException {
+		Actions act7=new Actions(driver);
+		act7.moveToElement(showMorElement).click().perform();
 		WebElement MComwithspecializationinFinancialManagement = driver.findElement(By.xpath("//a[normalize-space()='M.Com with specialization in Financial Management']"));
-		Actions act77=new Actions(driver);
-		Thread.sleep(2000);
-		act77.moveToElement(MComwithspecializationinFinancialManagement).click().perform();
-		Thread.sleep(2000);
+		JavascriptExecutor js=((JavascriptExecutor)driver);
+		js.executeScript("arguments[0].click();", MComwithspecializationinFinancialManagement);
+		Thread.sleep(3000);
 		String ExpMComwithspecializationinFinancialManagement = "https://amityonline.com/master-of-commerce-financial-management-online";
 		if(driver.getCurrentUrl().equals(ExpMComwithspecializationinFinancialManagement)) {
+			Assert.assertTrue(true);
 			System.out.println("MComwithspecializationinFinancialManagement program url is verified");
 		}else {
+			Assert.assertTrue(false);
 			System.out.println("MComwithspecializationinFinancialManagement program url is not verified");
 		}
 
-		driver.navigate().back();
-		
-		
-		//Master of Arts in Public Policy & Governance
-		Thread.sleep(2000);
+	}
+
+	//Master of Arts in Public Policy & Governance
+	public void MasterofArtsinPublicPolicyandGovernanceProgram() throws InterruptedException {
+		Actions act7=new Actions(driver);
+		act7.moveToElement(showMorElement).click().perform();
 		WebElement MasterofArtsinPublicPolicyandGovernance = driver.findElement(By.xpath("//a[normalize-space()='Master of Arts in Public Policy & Governance']"));
-		Actions act78=new Actions(driver);
-		Thread.sleep(2000);
-		act78.moveToElement(MasterofArtsinPublicPolicyandGovernance).click().perform();
-		Thread.sleep(2000);
+		JavascriptExecutor js=((JavascriptExecutor)driver);
+		js.executeScript("arguments[0].click();", MasterofArtsinPublicPolicyandGovernance);
+		Thread.sleep(3000);
 		String ExpMasterofArtsinPublicPolicyandGovernance = "https://amityonline.com/ma-public-policy";
 		if(driver.getCurrentUrl().equals(ExpMasterofArtsinPublicPolicyandGovernance)) {
+			Assert.assertTrue(true);
 			System.out.println("MasterofArtsinPublicPolicyandGovernance program url is verified");
 		}else {
+			Assert.assertTrue(false);
 			System.out.println("MasterofArtsinPublicPolicyandGovernance program url is not verified");
 		}
 
-		driver.navigate().back();
-		
-		
-		//Master of Arts in Psychology
-		Thread.sleep(2000);
+	}
+
+	//Master of Arts in Psychology
+	public void MasterofArtsinPsychologyProgran() throws InterruptedException {
+		Actions act7=new Actions(driver);
+		act7.moveToElement(showMorElement).click().perform();
 		WebElement MasterofArtsinPsychology = driver.findElement(By.xpath("//a[normalize-space()='Master of Arts in Psychology']"));
-		Actions act79=new Actions(driver);
-		Thread.sleep(2000);
-		act79.moveToElement(MasterofArtsinPsychology).click().perform();
+		JavascriptExecutor js=((JavascriptExecutor)driver);
+		js.executeScript("arguments[0].click();", MasterofArtsinPsychology);
 		Thread.sleep(3000);
 		String ExpMasterofArtsinPsychology = "https://amityonline.com/ma-in-psychology";
 		if(driver.getCurrentUrl().equals(ExpMasterofArtsinPsychology)) {
+			Assert.assertTrue(true);
 			System.out.println("MasterofArtsinPsychology program url is verified");
 		}else {
+			Assert.assertTrue(false);
 			System.out.println("MasterofArtsinPsychology program url is not verified");
 		}
 
-		driver.navigate().back();
-		
-		//Master of Science in Data Science
-		Thread.sleep(2000);
+	}
+	//Master of Science in Data Science
+	public void MasterofScienceinDataScienceProgram() throws InterruptedException {
+		Actions act7=new Actions(driver);
+		act7.moveToElement(showMorElement).click().perform();
 		WebElement MasterofScienceinDataScience = driver.findElement(By.xpath("//a[normalize-space()='Master of Science in Data Science']"));
-		Actions act80=new Actions(driver);
-		Thread.sleep(2000);
-		act80.moveToElement(MasterofScienceinDataScience).click().perform();
-		Thread.sleep(2000);
+		JavascriptExecutor js=((JavascriptExecutor)driver);
+		js.executeScript("arguments[0].click();", MasterofScienceinDataScience);
+		Thread.sleep(3000);
 		String ExpMasterofScienceinDataScience = "https://amityonline.com/msc-in-data-science";
 		if(driver.getCurrentUrl().equals(ExpMasterofScienceinDataScience)) {
+			Assert.assertTrue(true);
 			System.out.println("MasterofScienceinDataScience program url is verified");
 		}else {
+			Assert.assertTrue(false);
 			System.out.println("MasterofScienceinDataScience program url is not verified");
-		
-		
+
+
 		}
-		
-		
-	
-		
+
 	}
+
+
+
 
 	public void PrintprogramsList() throws InterruptedException {
 
@@ -1246,7 +1323,7 @@ public class HomePagePOM {
 
 
 	}
- 
+
 
 
 

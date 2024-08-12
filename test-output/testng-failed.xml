@@ -6,7 +6,7 @@
       <class name="HomePage.HomePage_FunctionalTest">
         <methods>
           <include name="LaunchBrowser"/>
-          <include name="UGProgram"/>
+          <include name="BATelugu"/>
           <include name="CloseBrowser"/>
         </methods>
       </class> <!-- HomePage.HomePage_FunctionalTest -->
