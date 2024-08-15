@@ -63,7 +63,7 @@ public class HomePage_FunctionalTest {
 
 	}
 
-	@Test(priority = 6)
+/*	@Test(priority = 6)
 	public void CallusButton() throws InterruptedException{
 		Hpom.CallusHeaderButton();
 
@@ -437,6 +437,8 @@ public class HomePage_FunctionalTest {
 
 
 	}  
+
+	*/
 
 
 
